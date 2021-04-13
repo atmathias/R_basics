@@ -49,11 +49,74 @@ my_dataframe
 
 class(my_dataframe)
 
+# SOME USEFUL FUNCTIONS
+# paste_this combines strings and can take on a number of arguements
+my_name <- "mathias"
+my_name_string <- paste("my name is:", my_name)
+print(my_name_string)
+
+# run if_ 
+my_random_numbers <-runif(20, 100, 230)
+print(my_random_numbers)
+?runif
+
+# rep
+my_repeat <- rep(fruits, each = 5)
+print(my_repeat)
+
+# OPERATORS
+# # arithmetic operators
+# + :Addition
+# -:Subtraction
+# * :Multiplication
+# / :Division
+# ^ :Exponent
+# %% :Modulus (Remainder from division)
+# %/% :Integer Division
+# 
+# # logical operators
+# !: Logical NOT
+# & :Element-wise logical AND
+# && :Logical AND
+# | :Element-wise logical OR
+# || :Logical OR
+# 
+# # assignment operators
+# <-, <<-, = :Leftwards assignment
+# ->, ->> :Rightwards assignment
+# #
+# # relational operators
+# < :Less than
+# > :Greater than
+# <= :Less than or equal to
+# >= :Greater than or equal to
+# == :Equal to
+# != :Not equal to
+
+if(my_name %in% my_name_string){
+  print(my_name)
+  
+  if ("name" %in% my_name_string) {
+    print("test passed")
+  }
+  
+}
+
+if(my_name %in% my_name_string){
+  print(paste("my name is:", my_name))
+  
+}else{
+  print(paste("my name:", my_name, " is not in the string"))
+}
 
 
 
 
 
+
+
+
+# creating functions
 
 
 
