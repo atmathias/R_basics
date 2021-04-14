@@ -93,30 +93,59 @@ print(my_repeat)
 # == :Equal to
 # != :Not equal to
 
-if(my_name %in% my_name_string){
+if(my_name %in% c("amos", "mathias", "anthony")){
   print(my_name)
   
-  if ("name" %in% my_name_string) {
+  if ("name" %in% c("amos", "mathias", "anthony")) {
     print("test passed")
   }
   
 }
 
-if(my_name %in% my_name_string){
-  print(paste("my name is:", my_name))
+
+
+# creating functions_
+# function_name <- function(argument_1, argument_2, ...) {
+#   Function body
+# }
+
+# checking an element in a vector
+my_function <- function(input_1, input_2){
+  if(input_1 %in% input_2){
+    final_output <- paste("my name is:", input_1)
+    
+  }else{
+    final_output <- paste("my name:", input_1, " is not in the vector")
+  }
   
-}else{
-  print(paste("my name:", my_name, " is not in the string"))
+  return (final_output)
 }
 
 
+my_output <- my_function("mathias", c("amos", "mathias", "anthony"))
+
+print(my_output)
+
+?substring
+
+# adding two numbers using a function
+my_addition_function <-  function(input_1, input_2){
+  my_add_number <- input_1 + input_2
+  return(my_add_number)
+  }
+
+my_add_two_numbers <-  my_addition_function(2,43)
+
+print(my_add_two_numbers)
 
 
 
 
 
 
-# creating functions
+
+
+
 
 
 
